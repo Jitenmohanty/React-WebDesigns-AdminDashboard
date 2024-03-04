@@ -41,7 +41,6 @@ const AdminSidebar = () => {
   }, []);
   useEffect(() => {
     const handleClickOutside = (event:MouseEvent) => {
-      
       if (sidebarRef.current && !sidebarRef.current.contains(event.target as Node)) {
         setShowModal(false);
       }
